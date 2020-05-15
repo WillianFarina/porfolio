@@ -30,7 +30,7 @@ header {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .menu {
@@ -57,6 +57,12 @@ header {
 a {
   text-decoration: none;
   color: #fff;
+  transition: color 1s;
+}
+
+a:active,
+a:hover {
+  color: teal;
 }
 
 .menu_title,
@@ -67,12 +73,21 @@ a {
 
 .menu_title {
   margin-bottom: 12px;
+  font-size: 3em;
 }
 
+.menu_subtitle {
+  font-size: 2em;
+}
+
+.contacts,
 .portfolio {
   padding: 2em;
+  min-height: 100vh;
+  padding-top: 80px;
 }
 
+.contacts h2,
 .portfolio h2 {
   margin-bottom: 1.5em;
   font-size: 2em;
@@ -107,6 +122,12 @@ a {
 .img-portfolio {
   width: 250px;
   height: 166.5px;
+  border: 4px solid transparent;
+  transition: border 1s; 
+}
+
+.img-portfolio:hover {
+  border-color: teal;
 }
 
 @media (min-width: 1200px) {
@@ -126,4 +147,16 @@ a {
   margin-top: 5px;
 }
 
+.contacts a {
+  font-size: 3em;
+}
 
+.contacts a + a {
+  margin-left: 25px;
+
+}
+
+.contacts .grid-icons {
+  text-align: center;
+  
+}
